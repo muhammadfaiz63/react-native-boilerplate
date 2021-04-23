@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- background color splash screen --> 
+    <item
+        android:drawable="@color/background" />
+
+    <!-- Logo splash screen -->
+    <item
+        android:drawable="@mipmap/logo"
+        android:height="100dp"
+        android:width="90dp"
+        android:gravity="center"
+    />
+
+
+</layer-list>

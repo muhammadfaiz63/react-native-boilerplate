@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "292139884517",
+    "firebase_url": "https://igaku-246014.firebaseio.com",
+    "project_id": "igaku-246014",
+    "storage_bucket": "igaku-246014.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292139884517:android:bccee3cf4e338642a1590c",
+        "android_client_info": {
+          "package_name": "com.allcaremobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292139884517-6gcl9hijhtos4588kp2ecrueqs0ki6c8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2gDl-YiqIGlOVFmhyBTzPgTKJ3bwxmq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292139884517-6gcl9hijhtos4588kp2ecrueqs0ki6c8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

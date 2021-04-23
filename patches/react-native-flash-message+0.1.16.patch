@@ -1,0 +1,46 @@
+diff --git a/node_modules/react-native-flash-message/src/FlashMessage.js b/node_modules/react-native-flash-message/src/FlashMessage.js
+index 4d7a840..70734ba 100644
+--- a/node_modules/react-native-flash-message/src/FlashMessage.js
++++ b/node_modules/react-native-flash-message/src/FlashMessage.js
+@@ -191,7 +191,6 @@ export const DefaultFlash = ({
+       icon.style,
+     ]);
+   const hasIcon = !!iconView;
+-
+   return (
+     <FlashMessageWrapper position={typeof position === "string" ? position : null}>
+       {wrapperInset => (
+@@ -202,6 +201,7 @@ export const DefaultFlash = ({
+               position === "center" && styles.defaultFlashCenter,
+               position !== "center" && floating && styles.defaultFlashFloating,
+               hasIcon && styles.defaultFlashWithIcon,
++              hasDescription && styles.defaultFlashHasDescription,
+               !!message.backgroundColor
+                 ? { backgroundColor: message.backgroundColor }
+                 : !!message.type &&
+@@ -621,12 +621,16 @@ const styles = StyleSheet.create({
+     height: "100%",
+   },
+   defaultFlash: {
+-    justifyContent: "flex-start",
++    justifyContent: "center",
+     paddingVertical: 15,
+     paddingHorizontal: 20,
+     backgroundColor: "#696969",
+     minHeight: OFFSET_HEIGHT,
+   },
++  defaultFlashHasDescription :  {
++    justifyContent: "flex-start",
++    alignItems: 'flex-start',
++  },
+   defaultFlashCenter: {
+     margin: 44,
+     borderRadius: 8,
+@@ -642,6 +646,7 @@ const styles = StyleSheet.create({
+   },
+   defaultFlashWithIcon: {
+     flexDirection: "row",
++    alignItems: 'center',
+   },
+   flashLabel: {
+     flexDirection: "column",
